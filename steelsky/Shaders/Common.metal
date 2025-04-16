@@ -79,7 +79,7 @@ float sampleShadow(float3 position, float3 lightDir, float planetRadius,
 	lightSpacePos /= lightSpacePos.w;
 	
 	// Convert to 0-1 UV space
-	float2 shadowUV = lightSpacePos.xy * 0.5 + 0.5;
+	float2 shadowUV = float2(lightSpacePos.x, -lightSpacePos.y) * 0.5 + 0.5;
 	
 	// Check if position is in shadow map bounds
 	if (shadowUV.x >= 0.0 && shadowUV.x <= 1.0 && shadowUV.y >= 0.0 && shadowUV.y <= 1.0) {
