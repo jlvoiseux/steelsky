@@ -318,8 +318,6 @@ fragment float shadowDownsampleFragment(
 	float2 texCoord = float2(position.xy) / float2(256.0, 256.0);
 	
 	float depth = sourceTexture.sample(textureSampler, texCoord).r;
-	
-	float esmDepth = exp(esmFactor * depth);
-	
-	return esmDepth;
+		
+	return depth;
 }
