@@ -1,6 +1,6 @@
 # Steel Sky
 Steel Sky is a renderer written in Swift and Metal. It has the following features:
-- Dynamic planetary sky/atmosphere system, with pysically accurate light scattering
+- Dynamic planetary sky/atmosphere system
 - Volumetric fog and light
 - OBJ parsing
 - Photo mode built on top of SwfitUI and SwiftData
